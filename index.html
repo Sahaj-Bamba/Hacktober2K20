@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html>
+	
+    <head>
+
+        <title>
+            Hacktober 2k20 
+        </title>    
+        
+        <meta charset="UTF-8" />
+        <meta https-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <meta name="description" content="Shop" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                
+        
+        
+        <!-- Latest compiled and minified CSS for boot strap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        
+        
+        <link rel="icon" type="image/x-icon" href="Image/Site/icon.jpeg">
+        
+        <!-- Java Script files -->
+        
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+                
+		<link rel="stylesheet" type="text/css" href="Style/index.css">
+
+		<style type="text/css">
+
+			.carousel-inner img {
+				/*width: 100%;*/
+				margin: auto;
+				min-height:200px;
+				max-height: 600px;
+				max-width: 700px;
+			}
+			@media (max-width: 600px) {
+				.carousel-caption {
+					display: none; 
+				}
+			}
+
+		</style>
+
+	</head>
+	
+	<body>
+
+        <section id="header fixed-top" style="position: fixed; width: 100%;">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                    <?php 
+                        if ( isset($_SESSION['shopName']) )  {
+                            echo $_SESSION['shopName'];
+                        }else{
+                            echo $_SESSION["SiteName"];
+                        }  
+                    ?>
+                </a>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav mr-auto">
+                        Hacktober 2k20
+                    </ul>
+                </div>
+            </nav>
+        </section>   		
+		<section id="main-content">
+
+			<div class="jumbotron">
+				<div class="container text-center">
+					<h1 class="display-2"> Hacktober Fest </h1>      
+					<strong><h4 class="mark"> Leave a message </h4></strong>
+				</div>
+			</div>
+
+
+        </section>
+        
+        <table>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Message
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Sahaj Bamba
+                </td>
+                <td>
+                    During the Darkest hour, I shine the brightest.
+                </td>
+            </tr>
+        </table>
+
+	
+        <section id="Footer">
+			<nav class="navbar navbar-inverse navbar-fixed-bottom fixed-bottom navbar bg-light bg-dark">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<div class="navbar-brand content text-muted">
+							Copyright © 2020 Design by Sahaj Bamba								
+						</div>
+					</div>
+				</div>
+			</nav>
+        </section>
+        	
+		
+    </body>
+
+</html>
